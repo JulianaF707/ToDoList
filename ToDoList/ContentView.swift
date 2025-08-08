@@ -1,19 +1,22 @@
-//
-//  ContentView.swift
-//  ToDoList
-//
-//  Created by Scholar on 8/8/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            HStack {
+                Text("Get Stuff Done")
+                    .font(.system(size: 40))
+                    .fontWeight(.bold)
+                Spacer()
+                Button {
+                    
+                } label: {
+                    Text("+")
+                        .font(.title)
+                        .fontWeight(.bold)
+                }
+            }
+            Spacer()
         }
         .padding()
     }
